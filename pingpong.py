@@ -1,7 +1,7 @@
-import sys, pygame
+import pygame
 pygame.init()
 
-# Screen defination
+# Screen definition
 screen_size = screen_width, screen_height = 1920, 1080
 screen = pygame.display.set_mode(screen_size)
 
@@ -58,7 +58,7 @@ while running:
             ball_speed[1] = -ball_speed[1]
         ball_rect.move_ip(ball_speed)
 
-    screen.fill(color = "black")
+    screen.fill(color="black")
     pygame.draw.rect(screen, color="green", rect=player_rect)
     pygame.draw.circle(screen, color="red", center=ball_rect.center, radius=ball_radius)
     pygame.time.delay(10)
